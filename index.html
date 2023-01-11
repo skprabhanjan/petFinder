@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pet Finder</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="index.js" async></script>
+    <script type="text/javascript" src="service.js" async></script>
+
+</head>
+
+<body>
+    <div>
+        <span style="font-size:30px;cursor:pointer" id="openNav">&#9776;</span>
+        <h1 style="text-align:center"> Here are your pets </h1>
+    </div>
+
+    <div id="mySidenav" class="sidenav">
+        <h4> Filter your pets here </h4>
+        <a href="javascript:void(0)" class="closebtn" id="closeNav">&times;</a>
+        <select id="ageFilter">
+            <option value="baby">Baby</option>
+            <option value="young">Young</option>
+            <option value="adult">Adult</option>
+            <option value="senior">Senior</option>
+        </select> <br /><br />
+        <button id="applyFilters"> Apply </button> <br /><br />
+        <button id="removeFilters"> Remove All Filters </button>
+    </div>
+
+
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="age"></p>
+            <p id="animal"></p>
+            <p id="breeds"></p>
+            <p id="contact_information"></p>
+            <p id="sex"></p>
+            <p id="size"></p>
+        </div>
+
+    </div>
+    <div id="app">
+        <div>
+
+</body>
+
+</html>
